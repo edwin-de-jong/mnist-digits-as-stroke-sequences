@@ -1,7 +1,7 @@
 See the [wiki page](https://github.com/edwin-de-jong/mnist-digits-as-stroke-sequences/wiki/MNIST-digits-as-stroke-sequences-(code))
 
 <<<<<<< HEAD
-The resulting sequence data set, containing sequences for all 60000 MNIST training images and 10000 test images, is available for direct download [here](https://github.com/edwin-de-jong/mnist-digits-stroke-sequence-data). See that same page for some examples.
+
 
 ## Project description
 
