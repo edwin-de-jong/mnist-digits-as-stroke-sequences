@@ -27,7 +27,7 @@ extractStrokes_TSP <- function( image)
     }
 
     atsp <- ATSP( distmat )
-    tour <- solve_TSP(atsp, method = "nn", control = list( start = startingpointind))
+    tour <- solve_TSP(atsp, method = "nn", control = list( start = startingpointind, repetitions = 10))
 
     points_tsp = stops[ tour, ]
 

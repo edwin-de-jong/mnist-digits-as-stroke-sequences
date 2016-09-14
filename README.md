@@ -1,47 +1,7 @@
 ## Summary
 Code project to transform the well known [MNIST](http://yann.lecun.com/exdb/mnist/) handwritten digit images to sequences of pen strokes, in order to obtain a benchmark data set for sequence learning. 
 
-The resulting dataset, containing sequences for all 60000 MNIST training images and 10000 test images, is available for direct download [here](https://github.com/edwin-de-jong/mnist-digits-stroke-sequence-data).
-
-Input image (MNIST training image no. 13):
-<img src="fig/trainimg-13-input.png" width="48">
-Thresholded:
-<img src="fig/trainimg-13-thresholded.png" width="48">
-Thinned:
-<img src="fig/trainimg-13-thinned.png" width="48"> 
-
-Sequence (positive y direction is downward): <img src="fig/trainimg-13-sequence.png" width="200">
-
-|dx|dy|eos|eod|
-|---:|:----:|:---|:---|
-|18|4|0|0|
-|-1|1|0|0|
-|-1|0|0|0|
-|-1|1|0|0|
-|0|1|0|0|
-|-1|0|0|0|
-|0|1|0|0|
-|-1|1|0|0|
-|0|1|0|0|
-|-1|0|0|0|
-|.|.|.|.|
-
-
-The complete sequence for this example is available [here](https://github.com/edwin-de-jong/mnist-digits-as-stroke-sequences/blob/master/fig/trainimg-13-inputdata.txt)
-
-And an example that requires two strokes:
-
-Input image (MNIST training image no. 58):
-<img src="fig/trainimg-58-input.png" width="48">
-Thresholded:
-<img src="fig/trainimg-58-thresholded.png" width="48">
-Thinned:
-<img src="fig/trainimg-58-thinned.png" width="48"> 
-
-[Sequence](https://github.com/edwin-de-jong/mnist-digits-as-stroke-sequences/blob/master/fig/trainimg-58-inputdata.txt) : <img src="fig/trainimg-58-sequence.png" width="200">
-
-The data set aims to provide a consistent set of sequences, meaning that similar images should result in similar sequences. The choices made by the algorithm will sometimes differ from the choices made by humans who write digits; training sequence 58 provides an example.
-After the downward and rightward stroke, the TSP algorithm prefers to continue with the downward stroke, and then draw the remaining upper part of the rightmost line in the upward direction. Most humans would probably stop instead, and draw the rightmost line as a single stroke in one go. This reflects differences in the criteria or preferences that are optimized in selecting between different options. For the purpose of providing a consistent data set for sequence learning, any set of criteria used to guide these choices could be used in principle, as long the choices are made consistently and as long as the complexity of the resulting sequences is minimized. 
+The resulting sequence data set, containing sequences for all 60000 MNIST training images and 10000 test images, is available for direct download [here](https://github.com/edwin-de-jong/mnist-digits-stroke-sequence-data). See that same page for some examples.
 
 ## Project description
 
