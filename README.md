@@ -1,6 +1,6 @@
-## Summary
-Code project to transform the well known [MNIST](http://yann.lecun.com/exdb/mnist/) handwritten digit images to sequences of pen strokes, in order to obtain a benchmark data set for sequence learning. 
+See the [wiki page](https://github.com/edwin-de-jong/mnist-digits-as-stroke-sequences/wiki/MNIST-digits-as-stroke-sequences-(code))
 
+<<<<<<< HEAD
 The resulting sequence data set, containing sequences for all 60000 MNIST training images and 10000 test images, is available for direct download [here](https://github.com/edwin-de-jong/mnist-digits-stroke-sequence-data). See that same page for some examples.
 
 ## Project description
@@ -120,3 +120,5 @@ This project is provided under the [GNU GPL License version 3](LICENSE).
 Please feel free to contact me for any questions or comments. My email is the 3 parts of my name in *reverse order*:
 
 <img src="fig/contact-info.png" width="700">
+=======
+>>>>>>> 8590bd37789b6c7095f1a3fdda34f8883221dc71
