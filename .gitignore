@@ -33,3 +33,9 @@ sequences/*
 
 *~
 
+# Build files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+createdata
+
