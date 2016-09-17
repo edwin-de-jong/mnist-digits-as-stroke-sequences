@@ -165,7 +165,6 @@ void createImages( string traintest, string mnistdir, string resultdir, int maxn
   
   for (int i = 0; i < nrimages_process; i++ )
     {
-      cout << "img " << i << endl;
       mnist_image = mnist_images[i];    
 
       if ( i < maxnrimages )
@@ -197,7 +196,6 @@ void createImages( string traintest, string mnistdir, string resultdir, int maxn
 	  nrcomponents8 = components.size();
 
 	  int nrpoints = cv::countNonZero( thresholded );
-	  cout << "orgnrcomponents " << nrcomponents_org4 << " " << nrcomponents_org8 << " nrcomponents " << nrcomponents4 << " " << nrcomponents8 << " orgnrpoints " << orgnrpoints << " nrpoints " << nrpoints << endl;
 
 	  if ( nrpoints < 0.5 * orgnrpoints)
 	    done = true;
