@@ -19,12 +19,12 @@ processImages <- function( imagefolder, resultfolder, labels, traintest )
         write.csv(points, file = fn, quote = F, row.names = F )
 
         addClassOutputs = T
-        targetdata = constructInputData( points, trainlabels[ imgnr + 1 ], addClassOutputs )
+        targetdata = constructInputData( points, labels[ imgnr + 1 ], addClassOutputs )
         fn = paste( resultfolder, traintest, 'img-', imgnr, '-targetdata.txt', sep = '' )
         write.table( targetdata, file = fn, quote = F, row.names = F, col.names = F )
 
         addClassOutputs = F
-        inputdata = constructInputData( points, trainlabels[ imgnr + 1 ], addClassOutputs )
+        inputdata = constructInputData( points, labels[ imgnr + 1 ], addClassOutputs )
         
         fn = paste( resultfolder, traintest, 'img-', imgnr, '-inputdata.txt', sep = '' )
         write.table( inputdata, file = fn, quote = F, row.names = F, col.names = F )
